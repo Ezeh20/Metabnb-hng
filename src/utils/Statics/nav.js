@@ -1,4 +1,4 @@
-export const Links = [
+  export const Links = [
   {
     id: 0,
     location: "/home",
@@ -6,7 +6,7 @@ export const Links = [
   },
   {
     id: 1,
-    location: "/ho",
+    location: "/place-to-stay",
     text: "Place to stay",
   },
   {
@@ -20,3 +20,4 @@ export const Links = [
     text: "Community",
   },
 ];
+

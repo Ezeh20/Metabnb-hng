@@ -35,4 +35,50 @@ code {
   @apply py-2 px-4 rounded-[10px] text-[13px]  350-max:px-3 350-max:text-[11px] text-basicWhite font-normal ml:w-[140px] ml:h-[40px] lg:w-[170px]  lg:h-[48px] lg:text-[16px];
 }
 
+.header {
+  @apply bg-basicWhite   shadow-sm ml:shadow-none  w-full  767-max:sticky top-0   z-[100] ml:mt-[43px];
+}
+.nav-menu {
+  @apply 767-max:fixed 767-max:bg-primary   767-max:shadow-2xl 767-max:top-[6rem]  z-20  767-max:flex 767-max:flex-col
+  767-max:p-8 767-max:text-center 767-max:gap-y-4  rounded-[5px]  flex   gap-x-[25px]  lg:gap-x-[48px]    transition-all ml:transition-none duration-500;
+}
 
+.links {
+  @apply text-[17px]  ml:mt-2 767-max:text-[20px] lg:text-[20px] font-normal 767-max:text-basicWhite;
+}
+.toggle {
+  @apply 350-max:w-[24px] 350-max:h-[24px] ml:hidden opacity-50;
+}
+.logo {
+  @apply w-[120px] h-[35px] ml:w-[150px] need:w-[233px] need:h-[36.67px] ml:h-[40px]  350-max:w-[100px] 350-max:h-[20px];
+}
+.nav {
+  @apply container-use  h-[48px] relative flex items-center z-50 py-9  ml:shadow-none justify-between;
+}
+.modal {
+  @apply fixed top-0 left-0 right-0 bottom-0  bg-modalBg  justify-center items-center z-[1000]   transition-all duration-1000;
+}
+.contain {
+  @apply w-[80%] h-[326px] ml:h-[340px] bg-basicWhite rounded-[16px] max-w-[600px];
+}
+.top {
+  @apply flex justify-between   text-center items-center  py-[24px] px-[32px];
+}
+.CW{
+  @apply text-[18px] ml:text-[24px] font-bold  350-max:text-[15px] mt-1
+}
+.line{
+  @apply   w-full h-[1px] bg-[#CFD8DC]
+}
+.bottom{
+  @apply  flex flex-col gap-y-[16px] py-[24px] px-[32px]  350-max:text-[12px]  text-[14px] md:text-[16px]
+}
+.meta{
+  @apply  flex  items-center justify-between 350-max:py-[8px] 350-max:px-[10px] py-[12px] px-[20px] hover:bg-[#F8F9FA] border-[1px] border-solid  border-[#CFD8DC] rounded-[12px]
+}
+.left{
+  @apply flex items-center  gap-x-[16px] 350-max:gap-x-[5px]
+}
+.Mask{
+  @apply text-[14px] ml:text-[18px] 350-max:text-[12px] font-semibold
+}
