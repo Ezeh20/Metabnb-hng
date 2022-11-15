@@ -1,12 +1,16 @@
 import { cards } from "../utils/Cards-Landing/cards-landing"
 import Card from "./Cards-component"
+import { useRef } from "react"
+
 
 const CardList = () => {
+    const triggerRef= useRef(null)
     return (
-        <div className="  mb-[53px] grid grid-cols-1 xl:grid-cols-4 mx:grid-cols-2  lg:grid-cols-3 xl:gap-x-[24px] place-content-center place-items-center gap-y-[40px] container-use">
+        <div className=" cardlist">
             {
                 cards.map(card => { return (<Card key={card.id} cards={card} />) })
             }
+            <div  ref={triggerRef} className={clsx('trigger', {})}></div>
         </div>
     )
 }

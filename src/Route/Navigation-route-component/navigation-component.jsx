@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom"
 import { useState } from "react"
+import { useEffect } from "react"
 import { Fragment } from "react"
 import { ReactComponent as MetaLogo } from "../../Assets/images/logo.svg"
 import MenuToggle from "../../Assets/images/menu.svg"
@@ -10,9 +11,15 @@ import { ReactComponent as Meta } from "../../Assets/images/metamask-high.svg"
 import Wallet from "../../Assets/images/wallet-connect.svg"
 import { Links } from "../../utils/Statics/nav"
 import Footer from "../../Components/Footer"
+
+
 const Nav = () => {
     const [navToggle, setNavToggle] = useState(false)
     const [modal, setModal] = useState(false)
+
+    useEffect(() => {
+        modal ? document.body.classList.add("halt") : document.body.classList.remove("halt")
+    },[modal])
 
     return (
         <Fragment>
@@ -60,8 +67,8 @@ const Nav = () => {
                 </div>
             </div>
             <Outlet />
-            {/**<Footer/> */}
-            
+            <Footer />
+
         </Fragment>
     )
 }
