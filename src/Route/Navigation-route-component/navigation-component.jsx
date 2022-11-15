@@ -9,6 +9,7 @@ import { ReactComponent as Arrow } from "../../Assets/images/arrow-right.svg"
 import { ReactComponent as Meta } from "../../Assets/images/metamask-high.svg"
 import Wallet from "../../Assets/images/wallet-connect.svg"
 import { Links } from "../../utils/Statics/nav"
+import Footer from "../../Components/Footer"
 const Nav = () => {
     const [navToggle, setNavToggle] = useState(false)
     const [modal, setModal] = useState(false)
@@ -59,6 +60,8 @@ const Nav = () => {
                 </div>
             </div>
             <Outlet />
+            {/**<Footer/> */}
+            
         </Fragment>
     )
 }

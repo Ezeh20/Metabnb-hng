@@ -7,6 +7,7 @@ module.exports = {
       md: "481px",
       mx:"670px",
       ml: "768px",
+      mll:"820px",
       lg: "1025px",
       need: "1340px",
       xl: "1440px",
@@ -25,5 +26,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };

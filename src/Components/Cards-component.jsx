@@ -5,8 +5,8 @@ import { useState } from "react"
 const Card = ({ cards }) => {
     const [like, setLike] = useState(false)
     return (
-        <div className="  relative border-[1px] border-solid border-[#D7D7D7] p-[16px] rounded-[15px]">
-            <img src={cards.cardImg} alt="cards" className=" mb-[16px]" />
+        <div className="  relative border-[1px] border-solid border-[#D7D7D7] p-[16px]  rounded-[15px]">
+            <img src={cards.cardImg} alt="cards" className=" mb-[16px] " />
             <div className="bottom-t flex justify-between">
                 <div className="left-side text-[12px] flex flex-col gap-y-[10px]">
                     <p>Desert king</p>
