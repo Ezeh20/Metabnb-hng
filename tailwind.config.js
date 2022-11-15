@@ -5,6 +5,7 @@ module.exports = {
     screens: {
       sm: "375px",
       md: "481px",
+      mx:"670px",
       ml: "768px",
       lg: "1025px",
       need: "1340px",
@@ -14,6 +15,7 @@ module.exports = {
     },
     colors: {
       primary: "hsla(319, 65%, 38%, 1)",
+      sec: "hsla(319, 65%, 50%, 1)",
       basicWhite: "hsla(0, 0%, 100%, 1)",
       footerBlack: "hsla(256, 1%, 11%, 1)",
       textColor: "hsla(0, 0%, 26%, 1)",

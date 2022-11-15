@@ -2,6 +2,7 @@ body {
   font-family: "Red Rose", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #434343;
 }
 
 code {
@@ -82,3 +83,6 @@ code {
 .Mask{
   @apply text-[14px] ml:text-[18px] 350-max:text-[12px] font-semibold
 }
+
+
+
